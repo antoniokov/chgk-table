@@ -1,0 +1,27 @@
+{
+  "name": "chgk-table",
+  "version": "1.0.0",
+  "description": "Получить расплюсовку по ID турнира на сайте рейтинга",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniokov/chgk-table.git"
+  },
+  "keywords": [
+    "chgk"
+  ],
+  "author": "Anton Iokov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antoniokov/chgk-table/issues"
+  },
+  "homepage": "https://github.com/antoniokov/chgk-table#readme",
+  "dependencies": {
+    "csv-stringify": "^1.0.4",
+    "node-fetch": "^1.6.3",
+    "whatwg-fetch": "^2.0.3"
+  }
+}
