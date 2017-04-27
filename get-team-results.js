@@ -7,7 +7,7 @@ function getTeamResults (tournamentId, teamId) {
         .then(tours => {
             return {
                 teamId: teamId,
-                results: [].concat(...tours.map(tour => tour.mask.map(result => Number.parseInt(result, 10))))
+                results: [].concat(...tours.map(tour => tour.mask))
             };
         });
 }
