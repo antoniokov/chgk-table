@@ -1,5 +1,5 @@
 const fs = require('mz/fs');
-const dir = require('./config').directory;
+const dir = require('../config').directory;
 
 
 function getListOfExistingFiles() {
