@@ -34,5 +34,5 @@ function exportTournaments(isForced = false) {
         .catch(error => logger.error(`failed to get list of tournaments: ${error}`));
 }
 
-exportTournaments(true);
+exportTournaments();
 //exportTournament(1908);
