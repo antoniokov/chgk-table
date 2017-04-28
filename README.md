@@ -1,7 +1,7 @@
 # Экспорт расплюсовок турниров по ЧГК
 
 Выгружает турниры за последние `N` дней с сайта рейтинга 
-и делает для каждого [csv-файл](htttps://replaytable.com/assets/csv/chgk/4109.csv) с расплюсовкой.
+и делает для каждого [csv-файл](https://replaytable.com/assets/csv/chgk/4109.csv) с расплюсовкой.
 
 Такую расплюсовку принимает, например, [Replay Table](https://replaytable.com/examples/chgk/2015-2016).
 
