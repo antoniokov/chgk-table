@@ -5,7 +5,7 @@ const logger = new winston.Logger({
         new winston.transports.Console({ json: false, timestamp: true }),
         new winston.transports.File({ filename: __dirname + '/export.log', json: false })
     ],
-    exitOnError: false
+    exitOnError: true
 });
 
 module.exports = logger;

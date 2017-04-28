@@ -13,10 +13,19 @@ function exportToCSV (results, tournamentId) {
     const prepared = [...results.values()].map(result => [result.name, ...result.results]);
     prepared.unshift(['Команда', ...prepared[0].slice(1).map((res, i) => i + 1)]);
 
-    stringify(prepared, (error, data) => {
-        fs.writeFile(`${dir}/${tournamentId}.csv`, data, 'utf8')
-            .then(() => logger.info(`saved as ${tournamentId}.csv`))
-            .catch(error => logger.error(error));
+    return new Promise((resolve, reject) => {
+        stringify(prepared, (error, csv) => {
+            if (error) {
+                reject(error);
+            }
+
+            fs.writeFile(`${dir}/${tournamentId}.csv`, csv, 'utf8')
+                .then(() => {
+                    logger.info(`saved as ${tournamentId}.csv`);
+                    resolve();
+                })
+                .catch(error => reject(error));
+        })
     });
 }
 
